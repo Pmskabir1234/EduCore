@@ -4,10 +4,21 @@
   <meta charset="UTF-8">
   <title>Educore - Student Management System</title>
 </head>
-        {% block var1 %}
-        <body style="background-color: rgb(204, 246, 176);">
-        <h1><center>Educore</center></h1>
-        <hr>
+      <!-- Header -->
+  <header style="background-color:#2c3e50; color:white; padding:20px; text-align:center;">
+    <h1 style="margin:0;">Educore</h1>
+    <p style="margin:0;">Smart Student Management System</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav style="background-color:#34495e; padding:10px; text-align:center;">
+    <a href="{% url 'student-home' %}" style="color:white; margin:0 15px; text-decoration:none;">Home</a>
+    <a href="{% url 'student-details' %}" style="color:white; margin:0 15px; text-decoration:none;">Students</a>
+    <a href="{% url 'student-course' %}" style="color:white; margin:0 15px; text-decoration:none;">Courses</a>
+    <a href="#" style="color:white; margin:0 15px; text-decoration:none;">Faculty</a>
+    <a href="#" style="color:white; margin:0 15px; text-decoration:none;">Login</a>
+  </nav>
+      {% block var1 %}
         
         {% endblock %}
         <footer style="position:fixed; bottom:0; left:0; width:100%; background-color:#2c3e50; color:white; text-align:center; padding:15px;">
