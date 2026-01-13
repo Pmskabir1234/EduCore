@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block var1 %}
+
+<div><h3>Student Details</h3></div>
+{% for student in students %}
+Name: {{student.name}}
+id: {{student.college_id}}
+{% for courses in student.course.all %}
+course: {{courses.course}} 
+{% endfor %}
+<br>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block var1 %}
+  <!-- Header -->
+  <header style="background-color:#2c3e50; color:white; padding:20px; text-align:center;">
+    <h1 style="margin:0;">Educore</h1>
+    <p style="margin:0;">Smart Student Management System</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav style="background-color:#34495e; padding:10px; text-align:center;">
+    <a href="{% url 'student-home' %}" style="color:white; margin:0 15px; text-decoration:none;">Home</a>
+    <a href="{% url 'student-details' %}" style="color:white; margin:0 15px; text-decoration:none;">Students</a>
+    <a href="{% url 'student-course' %}" style="color:white; margin:0 15px; text-decoration:none;">Courses</a>
+    <a href="#" style="color:white; margin:0 15px; text-decoration:none;">Faculty</a>
+    <a href="#" style="color:white; margin:0 15px; text-decoration:none;">Login</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section style="padding:60px; text-align:center; background:linear-gradient(to right, #3498db, #2ecc71); color:white;">
+    <h2 style="font-size:2.5em; margin-bottom:20px;">Welcome to Educore</h2>
+    <p style="font-size:1.2em; max-width:600px; margin:auto;">
+      Manage students, courses, and faculty seamlessly with Educore. A modern solution for educational institutions.
+    </p>
+    <button style="margin-top:30px; padding:15px 30px; background-color:#e74c3c; border:none; color:white; font-size:1em; cursor:pointer; border-radius:5px;">
+      Get Started
+    </button>
+  </section>
+
+  <!-- Features Section -->
+  <section style="display:flex; justify-content:space-around; padding:40px; background-color:white;">
+    <div style="width:30%; text-align:center; padding:20px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+      <h3>📚 Student Records</h3>
+      <p>Easily manage student profiles, grades, and attendance in one place.</p>
+    </div>
+    <div style="width:30%; text-align:center; padding:20px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+      <h3>🎓 Course Management</h3>
+      <p>Organize courses, schedules, and assignments with streamlined tools.</p>
+    </div>
+    <div style="width:30%; text-align:center; padding:20px; box-shadow:0 0 10px rgba(0,0,0,0.1);">
+      <h3>👩‍🏫 Faculty Portal</h3>
+      <p>Empower faculty with dashboards for teaching and student engagement.</p>
+    </div>
+  </section>
+</body>
+</html>
+{% endblock %}

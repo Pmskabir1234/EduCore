@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block var1 %}
+<div class="container mt-5">
+    <!-- Header -->
+    <div class="text-center mb-4">
+        <h1 class="display-4 text-primary">Educore</h1>
+        <p class="lead text-secondary">Empowering learning, one course at a time</p>
+    </div>
+
+    <!-- Course Cards -->
+    <div class="row">
+        {% for course in courses %}
+        <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0 h-100">
+                <div class="card-body text-center">
+                    <h5 class="card-title text-dark">{{ course.course }}</h5>
+                    <p class="card-text text-muted">Explore this course to enhance your skills.</p>
+                    
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
